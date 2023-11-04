@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #0077b6;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vw;
+}
+
+h1 {
+    font-style: italic;
+
+}
+
+.itens_header a {
+    padding: 0 16px;
+    text-decoration: none;
+    color: white;
+}
+
+section img {
+    height: 400px;
+    width: 400px;
+    margin-right: 50px;
+}
+
+section {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 15vw;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #0077b6;
+    font-style: italic;
+}
+
+section p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+
+.risco {
+    background-color: #0077b6;
+    width: 50vw;
+    height: 3px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+main .risco {
+    width: 80vw;
+}
+
+.produto img {
+    width: 250px;
+    height: 250px;
+}
+
+.produto h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.produto button {
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border:none;
+    border-radius: 5px;
+    background-color: #0272ae;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.produto {
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        
+    }
+
+    section img {
+        height: 400x;
+        width: 600px;
+        margin-bottom: 20px;
+        align-self: center;
+    
+    }
+
+    section .risco {
+        width: 90%;
+    }
+
+    .titulo .risco {
+        width: 78vw;
+        
+    }
+
+    .titulo {
+        margin-left: 40px;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header .itens_header {
+        font-size: 13px;
+       
+    }
+
+    header {
+        height: 10vw;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 15px;
+        align-self: center;
+    }
+
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    .sobre-a-loja p {
+        font-size: 12px;
+    }
+
+    main {
+        margin-bottom: 15px;
+    }
+}
+
